@@ -10,4 +10,10 @@
   <div fxLayout="row" fxLayoutAlign="center center">
     <h1>Downloads</h1>
   </div>
+  <mat-grid-list cols="3" rowHeight="20vh">
+    <mat-grid-tile *ngFor="let resource of resources">
+      <app-version-card [resource]="resource"></app-version-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+
 </div>

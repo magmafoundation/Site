@@ -44,6 +44,7 @@ import { MainCardComponent } from './main-card/main-card.component';
 import {HttpClientModule} from "@angular/common/http";
 import { ContentComponent } from './content/content.component';
 import { AboutCardsComponent } from './about-cards/about-cards.component';
+import {VersionCardComponent} from "./version-card/version-card.component";
 
 // @ts-ignore
 // @ts-ignore
@@ -54,7 +55,8 @@ import { AboutCardsComponent } from './about-cards/about-cards.component';
     NavbarComponent,
     MainCardComponent,
     ContentComponent,
-    AboutCardsComponent
+    AboutCardsComponent,
+    VersionCardComponent
   ],
   imports: [
     BrowserModule,
