@@ -43,6 +43,7 @@ import {FormsModule} from '@angular/forms';
 import { MainCardComponent } from './main-card/main-card.component';
 import {HttpClientModule} from "@angular/common/http";
 import { ContentComponent } from './content/content.component';
+import { AboutCardsComponent } from './about-cards/about-cards.component';
 
 // @ts-ignore
 // @ts-ignore
@@ -52,7 +53,8 @@ import { ContentComponent } from './content/content.component';
     AppComponent,
     NavbarComponent,
     MainCardComponent,
-    ContentComponent
+    ContentComponent,
+    AboutCardsComponent
   ],
   imports: [
     BrowserModule,
