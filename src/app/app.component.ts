@@ -11,9 +11,9 @@ export class AppComponent implements OnInit {
   constructor(private versionService: VersionService) {}
 
   ngOnInit(): void {
-    this.versionService.fetchVesions().then(value => {
-      console.log(value)
-    })
+    // this.versionService.fetchVesions().then(value => {
+    //   console.log(value)
+    // })
   }
 
 

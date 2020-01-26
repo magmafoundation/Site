@@ -42,6 +42,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import {FormsModule} from '@angular/forms';
 import { MainCardComponent } from './main-card/main-card.component';
 import {HttpClientModule} from "@angular/common/http";
+import { ContentComponent } from './content/content.component';
 
 // @ts-ignore
 // @ts-ignore
@@ -50,7 +51,8 @@ import {HttpClientModule} from "@angular/common/http";
   declarations: [
     AppComponent,
     NavbarComponent,
-    MainCardComponent
+    MainCardComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule,
