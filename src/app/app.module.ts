@@ -40,11 +40,13 @@ import {FlexLayoutModule} from "@angular/flex-layout";
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import {FormsModule} from '@angular/forms';
+import { MainCardComponent } from './main-card/main-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    MainCardComponent
   ],
   imports: [
     BrowserModule,
