@@ -8,7 +8,8 @@
   </mat-card-content>
   <mat-divider></mat-divider>
   <mat-card-actions class="version-card-actions">
-    <a *ngIf="resource.assets.length > 1" href="{{resource.assets[1].browser_download_url}}">Download</a>
-    <a *ngIf="resource.assets.length == 1" href="{{resource.assets[0].browser_download_url}}">Download</a>
+    <a class="download-button-latest" *ngIf="latest" mat-button href="{{resource.assets[1].browser_download_url}}">Latest Download!</a>
+    <a class="download-button" *ngIf="resource.assets.length > 1 && !latest" mat-button href="{{resource.assets[1].browser_download_url}}">Download</a>
+    <a class="download-button" *ngIf="resource.assets.length == 1 && !latest" mat-button href="{{resource.assets[0].browser_download_url}}">Download</a>
   </mat-card-actions>
 </mat-card>

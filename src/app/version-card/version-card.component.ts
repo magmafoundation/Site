@@ -10,6 +10,10 @@ export class VersionCardComponent implements OnInit {
 
   @Input("resource")
   public resource: Resource;
+
+  @Input("latest")
+  public latest: boolean;
+
   constructor() { }
 
   ngOnInit() {
