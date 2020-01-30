@@ -46,6 +46,8 @@ import { ContentComponent } from './content/content.component';
 import { AboutCardsComponent } from './about-cards/about-cards.component';
 import {VersionCardComponent} from "./version-card/version-card.component";
 
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
 // @ts-ignore
 // @ts-ignore
 // @ts-ignore
@@ -63,6 +65,7 @@ import {VersionCardComponent} from "./version-card/version-card.component";
     BrowserAnimationsModule,
     FormsModule,
     FlexLayoutModule,
+    NgbModule,
     MatCheckboxModule,
     MatCheckboxModule,
     MatButtonModule,

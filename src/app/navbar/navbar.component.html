@@ -1,38 +1,46 @@
-<div style="height: 100vh;">
+<div>
 
   <!--  <div fxLayout=“row” fxLayoutAlign=“center center”>-->
   <!--    <img src="assets/magma.png" alt="" class="logo">-->
   <!--  </div>-->
 
-  <div fxLayout="row" fxLayoutAlign="center center" class="logo-container">
-    <img src="assets/magma.png" alt="" class="logo">
+  <div class="logo-container text-center">
+    <img src="assets/magma.png" alt="" class="logo img-fluid">
   </div>
 
   <mat-toolbar color="primary">
-    <mat-toolbar-row>
-      <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
-        <mat-icon>menu</mat-icon>
-      </button>
-      <div fxShow="true" fxHide.lt-md class="nav-buttons">
-        <!-- The following menu items will be hidden on both SM and XS screen sizes -->
-        <a href="#" mat-button>Home</a>
-        <a href="#" mat-button>About</a>
-        <a href="#" mat-button>Download</a>
-        <a href="#" mat-button>API</a>
-      </div>
+    <div class="container">
+      <mat-toolbar-row>
+        <div class="center">
+          <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+            <mat-icon>menu</mat-icon>
+          </button>
+          <button mat-icon-button>
+            <mat-icon fontSet="fa" fontIcon="fa-sun" fxShow="true" fxHide.gt-sm></mat-icon>
+          </button>
+        </div>
 
-      <span class="menu-spacer"></span>
+        <div fxShow="true" fxHide.lt-md class="nav-buttons">
+          <!-- The following menu items will be hidden on both SM and XS screen sizes -->
+          <a href="#" mat-button>Home</a>
+          <a href="#about" mat-button>About</a>
+          <a href="#download" mat-button>Download</a>
+          <a href="https://magmafoundation.org/api" mat-button>API</a>
+        </div>
 
-      <div fxShow="true" fxHide.lt-md class="nav-buttons">
-        <a href="#" mat-button>Patreon</a>
-        <a href="#" mat-button>Twitter</a>
-        <a href="#" mat-button>Discord</a>
-        <a href="#" mat-button>Github</a>
-        <a href="#" mat-icon-button>
-          <mat-icon fontSet="fa" fontIcon="fa-sun"></mat-icon>
-        </a>
-      </div>
-    </mat-toolbar-row>
+        <span class="menu-spacer"></span>
+
+        <div fxShow="true" fxHide.lt-md class="nav-buttons">
+          <a href="#" mat-button>Patreon</a>
+          <a href="https://twitter.com/MagmaFoundation" mat-button>Twitter</a>
+          <a href="https://discord.magmafoundation.org" mat-button>Discord</a>
+          <a href="https://github.com/magmafoundation/Magma" mat-button>Github</a>
+          <a href="#" mat-icon-button>
+            <mat-icon fontSet="fa" fontIcon="fa-sun"></mat-icon>
+          </a>
+        </div>
+      </mat-toolbar-row>
+    </div>
   </mat-toolbar>
 
   <mat-sidenav-container fxFlexFill>
@@ -47,11 +55,12 @@
         <a href="#" mat-list-item>Twitter</a>
         <a href="#" mat-list-item>Discord</a>
         <a href="#" mat-list-item>Github</a>
-        <a href="#" mat-list-item>SUN</a>
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content fxFlexFill>
-    <app-content></app-content>
+      <div class="container">
+        <ng-content></ng-content>
+      </div>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>
