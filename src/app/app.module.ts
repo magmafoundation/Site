@@ -47,6 +47,7 @@ import { AboutCardsComponent } from './about-cards/about-cards.component';
 import {VersionCardComponent} from "./version-card/version-card.component";
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { FooterComponent } from './footer/footer.component';
 
 // @ts-ignore
 // @ts-ignore
@@ -58,7 +59,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     MainCardComponent,
     ContentComponent,
     AboutCardsComponent,
-    VersionCardComponent
+    VersionCardComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

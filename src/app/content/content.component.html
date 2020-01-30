@@ -7,7 +7,7 @@
 
   <app-about-cards></app-about-cards>
 
-  <div fxShow="true" fxHide.lt-sm >
+  <div fxShow="true" fxHide.lt-sm  style="min-height: 800px">
     <div fxLayout="row" fxLayoutAlign="center center">
       <h1>Downloads</h1>
     </div>
@@ -27,21 +27,17 @@
         <ng-template mat-tab-label class="version">
           <p class="version">1.14</p>
         </ng-template>
-        <mat-grid-list cols="3" rowHeight="300px">
-          <mat-grid-tile *ngFor="let resource of resources">
-            <app-version-card [resource]="resource" [latest]="resources.indexOf(resource) == 0"></app-version-card>
-          </mat-grid-tile>
-        </mat-grid-list>
+        <div fxLayout="row" fxLayoutAlign="center center" class="soon">
+          <h1>Coming Soon!</h1>
+        </div>
       </mat-tab>
       <mat-tab>
         <ng-template mat-tab-label class="version">
           <p class="version">1.15</p>
         </ng-template>
-        <mat-grid-list cols="3" rowHeight="300px">
-          <mat-grid-tile *ngFor="let resource of resources">
-            <app-version-card [resource]="resource" [latest]="resources.indexOf(resource) == 0"></app-version-card>
-          </mat-grid-tile>
-        </mat-grid-list>
+        <div fxLayout="row" fxLayoutAlign="center center" class="soon">
+          <h1>Coming Soon!</h1>
+        </div>
       </mat-tab>
     </mat-tab-group>
   </div>
