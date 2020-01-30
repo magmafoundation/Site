@@ -1,4 +1,5 @@
 @import "../../custom-theme"
+@import "~bootstrap/scss/bootstrap"
 
 .main-card-container
   padding-top: 50px
@@ -23,5 +24,12 @@
     color: white
   span
     color: #C5C5C5
+
+@include media-breakpoint-up(xs)
+  .text
+    padding-left: 0
+    text-align: center
+
+
 
 
