@@ -15,7 +15,7 @@ export class ContentComponent implements OnInit {
 
 
   ngOnInit() {
-    this.versionService.fetchVesions().then(value => this.resources = value.splice(0, 9));
+    this.versionService.fetchVesions('1.12.2').then(value => this.resources = value.splice(0, 8));
   }
 
 }
