@@ -11,6 +11,6 @@ export class VersionService {
   }
 
   public async fetchVesions(version: string): Promise<Resource[]> {
-    return await this.httpClient.get<Resource[]>(`http://api.magmafoundation.org/api/resources/magma/${version}/dev`).toPromise();
+    return await this.httpClient.get<Resource[]>(`https://api.magmafoundation.org/api/resources/magma/${version}/dev`).toPromise();
   }
 }
