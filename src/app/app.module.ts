@@ -1,10 +1,8 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 // Material
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatCheckboxModule} from '@angular/material';
-import {MatButtonModule} from '@angular/material';
+import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import {MatInputModule} from '@angular/material/input';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatDatepickerModule} from '@angular/material/datepicker';
@@ -34,20 +32,22 @@ import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
 
-import {FlexLayoutModule} from "@angular/flex-layout";
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 
-import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import {AppComponent} from './app.component';
+import {NavbarComponent} from './navbar/navbar.component';
 import {FormsModule} from '@angular/forms';
-import { MainCardComponent } from './main-card/main-card.component';
-import {HttpClientModule} from "@angular/common/http";
-import { ContentComponent } from './content/content.component';
-import { AboutCardsComponent } from './about-cards/about-cards.component';
-import {VersionCardComponent} from "./version-card/version-card.component";
+import {MainCardComponent} from './main-card/main-card.component';
+import {HttpClientModule} from '@angular/common/http';
+import {ContentComponent} from './content/content.component';
+import {AboutCardsComponent} from './about-cards/about-cards.component';
+import {VersionCardComponent} from './version-card/version-card.component';
 
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import { FooterComponent } from './footer/footer.component';
+import {FooterComponent} from './footer/footer.component';
+
+import {AdsenseModule} from 'ng2-adsense';
 
 // @ts-ignore
 // @ts-ignore
@@ -99,7 +99,11 @@ import { FooterComponent } from './footer/footer.component';
     MatTableModule,
     MatSortModule,
     MatPaginatorModule,
-    HttpClientModule
+    HttpClientModule,
+    AdsenseModule.forRoot({
+      adClient: 'ca-pub-6126767793606432',
+      adSlot: 7259870550,
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -53,8 +53,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
+                  "maximumWarning": "10mb",
+                  "maximumError": "15mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -121,6 +121,14 @@
           "configurations": {
             "production": {
               "devServerTarget": "Magma-Site:serve:production"
+            }
+          },
+          "server": {
+            "builder": "@angular-devkit/build-angular:server",
+            "options": {
+              "outputPath": "dist/server",
+              "main": "src/main.server.ts",
+              "tsConfig": "tsconfig.server.json"
             }
           }
         }
