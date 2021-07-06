@@ -78,7 +78,7 @@ function Downloads(props: any) {
                         <div className='row'>
                             <div className='col-md-12 col-xs-12'>
                                 <div className='icon-box-grid text-center'>
-                                    {downloads.slice(0, 10).map(download => {
+                                    {downloads.slice(0, 6).map(download => {
                                         return (
                                             <div key={download.tag} className='col-md-4 no-padding'>
                                                 <div className='icon-box text'>
@@ -88,9 +88,9 @@ function Downloads(props: any) {
                                                     <div className='content-box'>
                                                         <h5>Magma {download.mcVersion}</h5>
                                                         {development &&
-                                                        <h4 className='text-white'>
-                                                            Dev build!
-                                                        </h4>
+                                                        <h6 className='text-white'>
+                                                            Dev build
+                                                        </h6>
                                                         }
                                                         <p>Version: {download.tag}</p>
                                                         <p style={{
