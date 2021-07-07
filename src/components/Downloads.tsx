@@ -88,9 +88,9 @@ function Downloads(props: any) {
                                                     <div className='content-box'>
                                                         <h5>Magma {download.mcVersion}</h5>
                                                         {development &&
-                                                        <h6 className='text-white'>
-                                                            Dev build
-                                                        </h6>
+                                                        <div id="image">
+                                                            <div className="badge">Beta</div>
+                                                        </div>
                                                         }
                                                         <p>Version: {download.tag}</p>
                                                         <p style={{

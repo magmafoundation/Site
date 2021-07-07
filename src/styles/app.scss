@@ -32,6 +32,41 @@
 .text-white {
   color: white;
 }
+
+.badge {
+  position: absolute;
+  left: -7px;
+  top: 19px;
+  background-color: #FD4507;
+  -webkit-transform: rotate(-45deg) scale(1) skew(0deg) translate(10px);
+  -moz-transform: rotate(-45deg) scale(1) skew(0deg) translate(10px);
+  -o-transform: rotate(-45deg) scale(1) skew(0deg) translate(10px);
+  -ms-transform: rotate(-45deg) scale(1) skew(0deg) translate(10px);
+  transform: rotate(-45deg) scale(1) skew(0deg) translate(10px);
+  text-align: center;
+  color: white;
+  padding: 0 .5em;
+  border-top: 0px;
+  line-height: 20px;
+  margin: 0;
+}
+.badge:after {
+  content: ' ';
+  position: absolute;
+  right: -19px;
+  top: 0px;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #FD4507;
+}
+.badge:before {
+  content: ' ';
+  position: absolute;
+  left: -19px;
+  top: 0px;
+  border-left: 20px solid transparent;
+  border-bottom: 20px solid #FD4507;
+}
+
 #menu-footer-menu li{
   cursor: pointer;
 }
