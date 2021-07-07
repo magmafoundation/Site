@@ -18,14 +18,9 @@ function MyApp({ Component, pageProps }: AppProps) {
         <div id='page' className='site'>
             <Navbar />
             <div id='content' className='site-content'>
-                <Header />
                 <Component />
-                <About />
-                <Partners />
-                <Stats />
-                <Downloads />
             </div>
-            <BackToTop/>
+            <BackToTop />
             <Footer />
 
         </div>
