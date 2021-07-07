@@ -16,7 +16,9 @@
     "axios": "^0.21.1",
     "react-responsive-carousel": "^3.2.19",
     "react-slidedown": "^2.4.5",
-    "react-scroll": "^1.8.2"
+    "react-scroll": "^1.8.2",
+    "react-countup": "^4.4.0",
+    "react-intersection-observer": "^8.32.0"
   },
   "devDependencies": {
     "@types/react": "17.0.13",

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { getStats, IStats } from '../stats.utils';
+import StatsCounter from "./StatsCounter";
 
 export function Stats() {
     const [stats, setStats] = useState<IStats>({
@@ -36,8 +37,7 @@ export function Stats() {
                                         <div className='ot-counter s2'>
                                             <h6>SERVERS</h6>
                                             <div>
-                                                <span className='num' data-time={2000} data-to={stats.server_count}>{stats.server_count}</span>
-                                                <span>+</span>
+                                                <StatsCounter target={stats.server_count} duration={1} />
                                             </div>
                                         </div>
                                     </div>
@@ -45,8 +45,7 @@ export function Stats() {
                                         <div className='ot-counter s2'>
                                             <h6>PLAYERS</h6>
                                             <div>
-                                                <span className='num' data-time={2000} data-to={stats.player_count}>{stats.player_count}</span>
-                                                <span>+</span>
+                                                <StatsCounter target={stats.player_count} duration={1} />
                                             </div>
                                         </div>
                                     </div>
@@ -54,8 +53,7 @@ export function Stats() {
                                         <div className='ot-counter s2'>
                                             <h6>Closed Issues</h6>
                                             <div>
-                                                <span className='num' data-time={2000} data-to={stats.closed_issues}>{stats.closed_issues}</span>
-                                                <span>+</span>
+                                                <StatsCounter target={stats.closed_issues} duration={1} />
                                             </div>
                                         </div>
                                     </div>
@@ -63,8 +61,7 @@ export function Stats() {
                                         <div className='ot-counter s2'>
                                             <h6>Open Issues</h6>
                                             <div>
-                                                <span className='num' data-time={2000} data-to={stats.open_issues}>{stats.open_issues}</span>
-                                                <span>+</span>
+                                                <StatsCounter target={stats.open_issues} duration={1} />
                                             </div>
                                         </div>
                                     </div>
