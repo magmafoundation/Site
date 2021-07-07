@@ -1,3 +1,5 @@
+import { Link } from 'react-scroll';
+
 export function Footer() {
 
     return (
@@ -15,12 +17,21 @@ export function Footer() {
                 </div>
                 <div className='footer-menu'>
                     <ul id='menu-footer-menu' className='menu'>
-                        <li><a href='index.html' aria-current='page'>Home</a></li>
-                        <li><a href='about-us.html'>About</a></li>
-                        <li><a href='portfolio-grid.html'>Partners</a></li>
-                        <li><a href='faqs.html'>Hosts</a></li>
-                        <li><a href='faqs.html'>Downloads</a></li>
-                        <li><a href='contacts.html'>API</a></li>
+                        <li>
+                            <Link to='/'><i className='fas fa-home' /> <a>Home</a></Link>
+                        </li>
+                        <li>
+                            <Link smooth={true} duration={500} to='about'><i
+                                className='fas fa-info' /> <a>About</a></Link>
+                        </li>
+                        <li>
+                            <Link smooth={true} duration={500} to='partners'><i
+                                className='fas fa-handshake' /> <a>Partners</a></Link>
+                        </li>
+                        <li>
+                            <Link smooth={true} duration={500} to='downloads'><i
+                                className='fas fa-download' /> <a>Downloads</a></Link>
+                        </li>
                     </ul>
                 </div>
                 <p className='copyright text-center'>© 2018 - 2021 Magma Development</p>

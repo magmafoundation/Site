@@ -65,7 +65,7 @@ export function Navbar() {
                                 {/* logo start */}
                                 <div className='octf-col'>
                                     <div id='site-logo' className='site-logo'>
-                                        <a href='index.html'>
+                                        <a href='/'>
                                             <img className='logo-static' src='images/magma-logo.png' alt='Magma' />
                                             <img className='logo-scroll' src='images/magma-logo-dark.png' alt='Magma' />
                                         </a>
@@ -76,7 +76,7 @@ export function Navbar() {
                                 <nav id='site-navigation' className='main-navigation'>
                                     <ul id='primary-menu' className='menu'>
                                         <li className='current-menu-item current-menu-ancestor'>
-                                            <a href='index.html'><i className='fas fa-home' /> Home</a>
+                                            <a href='/'><i className='fas fa-home' /> Home</a>
                                         </li>
                                         <li>
                                             <Link smooth={true} duration={500} to='about'><i
@@ -105,7 +105,7 @@ export function Navbar() {
                     <div className='mlogo_wrapper clearfix'>
                         {/* logo mobile start */}
                         <div className='mobile_logo'>
-                            <a href='index.html'><img src='images/magma-logo.png' alt='Onum' /></a>
+                            <a href='/'><img src='images/magma-logo.png' alt='Onum' /></a>
                         </div>
                         {/* logo mobile end */}
                         <div id='mmenu_toggle' onClick={toggleMobileNav} className={`${showMobileNav ? 'active' : ''}`}>
@@ -118,7 +118,7 @@ export function Navbar() {
                             <div className='mobile_nav' style={{ display: 'block' }}>
                                 <ul id='menu-main-menu' className='mobile_mainmenu'>
                                     <li className='current-menu-item current-menu-ancestor'>
-                                        <a href='index.html'><i className='fas fa-home' /> Home</a>
+                                        <a href='/'><i className='fas fa-home' /> Home</a>
                                     </li>
                                     <li>
                                         <a href='#'><i className='fas fa-info' /> About</a>
