@@ -8,10 +8,12 @@ import { Partners } from '../components/Partners';
 import { Stats } from '../components/Stats';
 import Downloads from '../components/Downloads';
 import App from 'next/app';
-import { Head } from 'next/document';
+import { animateScroll as scroll } from 'react-scroll/modules';
+import { BackToTop } from '../components/BackToTop';
 
 
 function MyApp({ Component, pageProps }: AppProps) {
+
     return (
         <div id='page' className='site'>
             <Navbar />
@@ -23,7 +25,9 @@ function MyApp({ Component, pageProps }: AppProps) {
                 <Stats />
                 <Downloads />
             </div>
+            <BackToTop/>
             <Footer />
+
         </div>
 
     );

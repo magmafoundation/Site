@@ -14,12 +14,15 @@
     "react-dom": "17.0.2",
     "sass": "^1.35.1",
     "axios": "^0.21.1",
-    "react-responsive-carousel": "^3.2.19"
+    "react-responsive-carousel": "^3.2.19",
+    "react-slidedown": "^2.4.5",
+    "react-scroll": "^1.8.2"
   },
   "devDependencies": {
     "@types/react": "17.0.13",
     "eslint": "7.30.0",
     "eslint-config-next": "11.0.1",
-    "typescript": "4.3.5"
+    "typescript": "4.3.5",
+    "@types/react-scroll": "^1.8.2"
   }
 }

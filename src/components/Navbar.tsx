@@ -1,6 +1,35 @@
+import { useEffect, useState } from 'react';
+import { SlideDown } from 'react-slidedown';
+import { Link, animateScroll as scroll } from 'react-scroll';
+
+import 'react-slidedown/lib/slidedown.css';
+
 export function Navbar() {
+
+    const [showMobileNav, setShowMobileNav] = useState(false);
+    const [isStuck, setIsStuck] = useState(false);
+
+    function toggleMobileNav() {
+        setShowMobileNav(!showMobileNav);
+    }
+
+
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+            const height = document.getElementById('site-header')!.clientHeight;
+
+            if (window.scrollY > height-2) {
+                return setIsStuck(true);
+            }
+
+            setIsStuck(false);
+        });
+    }, []);
+
+
     return (
-        <header id='site-header' className='site-header header-style-3 header-overlay header-fullwidth sticky-header'>
+        <header id='site-header'
+                className={`site-header header-style-3 header-overlay header-fullwidth sticky-header`}>
             <div className='header-topbar'>
                 <div className='octf-area-wrap'>
                     <div className='container-fluid'>
@@ -28,7 +57,7 @@ export function Navbar() {
                 </div>
             </div>
             {/* Main Header start */}
-            <div className='octf-main-header'>
+            <div className={`octf-main-header ${isStuck ? 'is-stuck': ''}`}>
                 <div className='octf-area-wrap'>
                     <div className='container-fluid octf-mainbar-container'>
                         <div className='octf-mainbar'>
@@ -50,20 +79,18 @@ export function Navbar() {
                                             <a href='index.html'><i className='fas fa-home' /> Home</a>
                                         </li>
                                         <li>
-                                            <a href='#'><i className='fas fa-info' /> About</a>
+                                            <Link smooth={true} duration={500} to='about'><i
+                                                className='fas fa-info' /> About</Link>
                                         </li>
                                         <li>
-                                            <a href='#'><i className='fas fa-handshake' /> Partners</a>
+                                            <Link smooth={true} duration={500} to='partners'><i
+                                                className='fas fa-handshake' /> Partners</Link>
                                         </li>
                                         <li>
-                                            <a href='#'><i className='fas fa-server' /> Hosts</a>
+                                            <Link smooth={true} duration={500} to='downloads'><i
+                                                className='fas fa-download' /> Downloads</Link>
                                         </li>
-                                        <li>
-                                            <a href='#'><i className='fas fa-download' /> Downloads</a>
-                                        </li>
-                                        <li>
-                                            <a href='#'><i className='fas fa-code' /> API</a>
-                                        </li>
+
                                     </ul>
                                 </nav>
                                 {/* #site-navigation */}
@@ -81,35 +108,40 @@ export function Navbar() {
                             <a href='index.html'><img src='images/magma-logo.png' alt='Onum' /></a>
                         </div>
                         {/* logo mobile end */}
-                        <div id='mmenu_toggle'>
+                        <div id='mmenu_toggle' onClick={toggleMobileNav} className={`${showMobileNav ? 'active' : ''}`}>
                             <button />
                         </div>
                     </div>
                     {/* nav mobile start */}
-                    <div className='mmenu_wrapper'>
-                        <div className='mobile_nav'>
-                            <ul id='menu-main-menu' className='mobile_mainmenu'>
-                                <li className='current-menu-item current-menu-ancestor'>
-                                    <a href='index.html'><i className='fas fa-home' /> Home</a>
-                                </li>
-                                <li>
-                                    <a href='#'><i className='fas fa-info' /> About</a>
-                                </li>
-                                <li>
-                                    <a href='#'><i className='fas fa-handshake' /> Partners</a>
-                                </li>
-                                <li>
-                                    <a href='#'><i className='fas fa-server' /> Hosts</a>
-                                </li>
-                                <li>
-                                    <a href='#'><i className='fas fa-download' /> Downloads</a>
-                                </li>
-                                <li>
-                                    <a href='#'><i className='fas fa-code' /> API</a>
-                                </li>
-                            </ul>
+                    <SlideDown closed={!showMobileNav}>
+                        <div className='mmenu_wrapper '>
+                            <div className='mobile_nav' style={{ display: 'block' }}>
+                                <ul id='menu-main-menu' className='mobile_mainmenu'>
+                                    <li className='current-menu-item current-menu-ancestor'>
+                                        <a href='index.html'><i className='fas fa-home' /> Home</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'><i className='fas fa-info' /> About</a>
+                                    </li>
+                                    <li>
+                                        <a href='https://discord.gg/magma'><i className='fab fa-discord' /> Discord</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'><i className='fas fa-handshake' /> Partners</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'><i className='fas fa-server' /> Hosts</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'><i className='fas fa-download' /> Downloads</a>
+                                    </li>
+                                    <li>
+                                        <a href='#'><i className='fas fa-code' /> API</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
+                    </SlideDown>
                     {/* nav mobile end */}
                 </div>
             </div>

@@ -7,7 +7,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 
 export function Partners() {
     return (
-        <section className='p-b120'>
+        <section id='partners' className='p-b120'>
             <div className='container'>
                 <div className='row'>
                     <div className='col-md-12'>
