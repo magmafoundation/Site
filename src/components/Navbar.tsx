@@ -36,13 +36,13 @@ export function Navbar() {
                         {/* social icons */}
                         <ul className='social-list'>
                             <li>
-                                <a href='#' target='_self'><i className='fab fa-discord' /></a>
+                                <Link to='#' target='_self'><i className='fab fa-discord' /></Link>
                             </li>
                             <li>
-                                <a href='#' target='_self'><i className='fab fa-twitter' /></a>
+                                <Link to='#' target='_self'><i className='fab fa-twitter' /></Link>
                             </li>
                             <li>
-                                <a href='#' target='_self'><i className='fab fa-patreon' /></a>
+                                <Link to='#' target='_self'><i className='fab fa-patreon' /></Link>
                             </li>
                         </ul>
                         {/* social icons close */}
@@ -65,10 +65,10 @@ export function Navbar() {
                                 {/* logo start */}
                                 <div className='octf-col'>
                                     <div id='site-logo' className='site-logo'>
-                                        <a href='/'>
+                                        <Link to='/'>
                                             <img className='logo-static' src='images/magma-logo.png' alt='Magma' />
                                             <img className='logo-scroll' src='images/magma-logo-dark.png' alt='Magma' />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                                 {/* logo start */}
@@ -76,7 +76,7 @@ export function Navbar() {
                                 <nav id='site-navigation' className='main-navigation'>
                                     <ul id='primary-menu' className='menu'>
                                         <li className='current-menu-item current-menu-ancestor'>
-                                            <a href='/'><i className='fas fa-home' /> Home</a>
+                                            <Link to='/'><i className='fas fa-home' /> Home</Link>
                                         </li>
                                         <li>
                                             <Link smooth={true} duration={500} to='about'><i
@@ -105,7 +105,7 @@ export function Navbar() {
                     <div className='mlogo_wrapper clearfix'>
                         {/* logo mobile start */}
                         <div className='mobile_logo'>
-                            <a href='/'><img src='images/magma-logo.png' alt='Onum' /></a>
+                            <Link to='/'><img src='images/magma-logo.png' alt='Onum' /></Link>
                         </div>
                         {/* logo mobile end */}
                         <div id='mmenu_toggle' onClick={toggleMobileNav} className={`${showMobileNav ? 'active' : ''}`}>
@@ -118,25 +118,25 @@ export function Navbar() {
                             <div className='mobile_nav' style={{ display: 'block' }}>
                                 <ul id='menu-main-menu' className='mobile_mainmenu'>
                                     <li className='current-menu-item current-menu-ancestor'>
-                                        <a href='/'><i className='fas fa-home' /> Home</a>
+                                        <Link to='/'><i className='fas fa-home' /> Home</Link>
                                     </li>
                                     <li>
-                                        <a href='#'><i className='fas fa-info' /> About</a>
+                                        <Link to='#'><i className='fas fa-info' /> About</Link>
                                     </li>
                                     <li>
-                                        <a href='https://discord.gg/magma'><i className='fab fa-discord' /> Discord</a>
+                                        <Link to='https://discord.gg/magma'><i className='fab fa-discord' /> Discord</Link>
                                     </li>
                                     <li>
-                                        <a href='#'><i className='fas fa-handshake' /> Partners</a>
+                                        <Link to='#'><i className='fas fa-handshake' /> Partners</Link>
                                     </li>
                                     <li>
-                                        <a href='#'><i className='fas fa-server' /> Hosts</a>
+                                        <Link to='#'><i className='fas fa-server' /> Hosts</Link>
                                     </li>
                                     <li>
-                                        <a href='#'><i className='fas fa-download' /> Downloads</a>
+                                        <Link to='#'><i className='fas fa-download' /> Downloads</Link>
                                     </li>
                                     <li>
-                                        <a href='#'><i className='fas fa-code' /> API</a>
+                                        <Link to='#'><i className='fas fa-code' /> API</Link>
                                     </li>
                                 </ul>
                             </div>
