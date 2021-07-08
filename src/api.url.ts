@@ -1,3 +1,11 @@
 export function getApiURL() {
-    return process.env.NODE_ENV == "production" ? "https://api.magmafoundation.org/api": 'http://localhost:3001/api'
+
+    const env = process.env.NODE_ENV
+    if(env == "development"){
+        return "http://localhost:3001/api"
+    }
+    else if (env == "production"){
+       return "https://api.magmafoundation.org/api"
+    }
+
 }
