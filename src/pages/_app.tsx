@@ -10,20 +10,25 @@ import Downloads from '../components/Downloads';
 import App from 'next/app';
 import { animateScroll as scroll } from 'react-scroll/modules';
 import { BackToTop } from '../components/BackToTop';
+import Head from 'next/head';
 
 
 function MyApp({ Component, pageProps }: AppProps) {
 
     return (
         <div id='page' className='site'>
+            <Head>
+                <title>Magma Foundation</title>
+            </Head>
+
             <Navbar />
             <div id='content' className='site-content'>
                 <Component />
             </div>
             <BackToTop />
             <Footer />
-
         </div>
+
 
     );
 }
