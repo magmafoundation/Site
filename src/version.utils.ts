@@ -14,7 +14,7 @@ export async function getDownloads(version: string, dev: boolean): Promise<Array
 
     const downloads: Array<Download> = [];
 
-    console.log(`Fetching downloads for version ${version} dev: ${dev} http://localhost:3001/api/resources/magma/${version}/${(dev ? 'dev' : 'stable')}`);
+    console.log(`Fetching downloads for version ${version} dev: ${dev} ${getApiURL()}/resources/magma/${version}/${(dev ? 'dev' : 'stable')}`);
 
     let response = await axios.get(`${getApiURL()}/resources/magma/${version}/${(dev ? 'dev' : 'stable')}`);
 
