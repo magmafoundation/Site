@@ -1,3 +1,5 @@
+import {Link} from "react-scroll";
+
 export function Header() {
     return (
         <section className='banner big-padding-top bg-banner-gradient particles-js'
@@ -19,8 +21,8 @@ export function Header() {
                                 with mods and Plugins using Spigot and Paper for Performance and Stability. </h6>
                             <div className='wpcf7'>
                                 <div className='screen-reader-response' />
-                                <button type='submit' className='octf-btn octf-btn-icon octf-btn-primary'>Start
-                                    Now<i className='flaticon-right-arrow-1' /></button>
+                                <Link smooth={true} to={"about"}><button type='submit' className='octf-btn octf-btn-icon octf-btn-primary'>Start
+                                    Now<i className='flaticon-right-arrow-1' /></button></Link>
                             </div>
                         </div>
                     </div>
