@@ -76,7 +76,7 @@ export function Navbar() {
                                 <nav id='site-navigation' className='main-navigation'>
                                     <ul id='primary-menu' className='menu'>
                                         <li className='current-menu-item current-menu-ancestor'>
-                                            <Link to='/'><i className='fas fa-home' /> Home</Link>
+                                            <Link to='page'><i className='fas fa-home' /> Home</Link>
                                         </li>
                                         <li>
                                             <Link smooth={true} duration={500} to='about'><i
@@ -103,7 +103,7 @@ export function Navbar() {
                 </div>
             </div>
             {/* Header mobile */}
-            <div className='header_mobile'>
+            <div className={`header_mobile ${isStuck ? 'is-stuck': ''}`}>
                 <div className='container'>
                     <div className='mlogo_wrapper clearfix'>
                         {/* logo mobile start */}
@@ -121,25 +121,22 @@ export function Navbar() {
                             <div className='mobile_nav' style={{ display: 'block' }}>
                                 <ul id='menu-main-menu' className='mobile_mainmenu'>
                                     <li className='current-menu-item current-menu-ancestor'>
-                                        <Link to='/'><i className='fas fa-home' /> Home</Link>
+                                        <Link smooth={true} duration={500} to='page'><i className='fas fa-home' /> Home</Link>
                                     </li>
                                     <li>
-                                        <Link to='#'><i className='fas fa-info' /> About</Link>
+                                        <Link smooth={true} duration={500} to='about'><i className='fas fa-info' /> About</Link>
                                     </li>
                                     <li>
-                                        <Link to='https://discord.gg/magma'><i className='fab fa-discord' /> Discord</Link>
+                                        <Link smooth={true} duration={500} to='https://discord.gg/magma'><i className='fab fa-discord' /> Discord</Link>
                                     </li>
                                     <li>
-                                        <Link to='#'><i className='fas fa-handshake' /> Partners</Link>
+                                        <Link smooth={true} duration={500} to='partners'><i className='fas fa-handshake' /> Partners</Link>
                                     </li>
                                     <li>
-                                        <Link to='#'><i className='fas fa-server' /> Hosts</Link>
+                                        <Link smooth={true} duration={500} to='downloads'><i className='fas fa-download' /> Downloads</Link>
                                     </li>
                                     <li>
-                                        <Link to='#'><i className='fas fa-download' /> Downloads</Link>
-                                    </li>
-                                    <li>
-                                        <Link to='#'><i className='fas fa-code' /> API</Link>
+                                        <a href="https://api.magmafoundation.org/api-docs/index.html"><i className='fas fa-cogs' /> API</a>
                                     </li>
                                 </ul>
                             </div>
