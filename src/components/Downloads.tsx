@@ -1,8 +1,10 @@
-import { useEffect, useState } from 'react';
-import { Download, getDownloads } from '../version.utils';
+import {useEffect, useState} from 'react';
+import {Download, getDownloads} from '../version.utils';
+import {useMediaQuery} from 'react-responsive';
 
 
 function Downloads(props: any) {
+    const isMobile = useMediaQuery({ query: `(max-width: 760px)` });
 
     const [version, setVersion] = useState('1.12.2');
     const [development, setDevelopment] = useState(false);
@@ -47,8 +49,8 @@ function Downloads(props: any) {
                     <div className='container'>
 
 
-                        <div style={{ marginBottom: '100px' }}>
-                            <div className='ot-tabs' style={{ display: 'inline-block', float: 'left' }}>
+                        <div className={` ${isMobile ? '' : 'm-b100'}`}>
+                            <div className={`ot-tabs ${isMobile? 'text-center m-b10' : 'pull-left'}`}>
 
                                 <ul className='tabs-heading unstyle'>
                                     <li onClick={onVersionTabClick}
@@ -61,7 +63,7 @@ function Downloads(props: any) {
                             </div>
 
 
-                            <div className='ot-tabs' style={{ display: 'inline-block', float: 'right' }}>
+                            <div className={`ot-tabs ${isMobile? 'text-center  m-b10' : 'pull-right'}`}>
                                 <ul className='tabs-heading unstyle'>
                                     <li onClick={onDevelopmentClick}
                                         className={`tab-link octf-btn ${!development ? 'current' : ''}`}>Stable
