@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { getApiURL } from './api.url';
 
 export interface Download {
     tag: string,
@@ -15,7 +16,7 @@ export async function getDownloads(version: string, dev: boolean): Promise<Array
 
     console.log(`Fetching downloads for version ${version} dev: ${dev} http://localhost:3001/api/resources/magma/${version}/${(dev ? 'dev' : 'stable')}`);
 
-    let response = await axios.get(`http://localhost:3001/api/resources/magma/${version}/${(dev ? 'dev' : 'stable')}`);
+    let response = await axios.get(`${getApiURL()}/resources/magma/${version}/${(dev ? 'dev' : 'stable')}`);
 
 
     for (let download of response.data) {

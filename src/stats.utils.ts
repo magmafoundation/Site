@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { getApiURL } from './api.url';
 
 export interface IStats {
     closed_issues: number;
@@ -12,6 +13,6 @@ export async function getStats() {
     console.log(`Fetching stats...`);
 
 
-    let response = await axios.get(`http://localhost:3001/api/stats`);
+    let response = await axios.get(`${getApiURL()}/stats`);
     return response.data as IStats
 }
