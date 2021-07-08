@@ -36,13 +36,13 @@ export function Navbar() {
                         {/* social icons */}
                         <ul className='social-list'>
                             <li>
-                                <Link to='#' target='_self'><i className='fab fa-discord' /></Link>
+                                <a href='https://discord.gg/magma' target='_self'><i className='fab fa-discord' /></a>
                             </li>
                             <li>
-                                <Link to='#' target='_self'><i className='fab fa-twitter' /></Link>
+                                <a href='https://twitter.com/Magmafoundation' target='_self'><i className='fab fa-twitter' /></a>
                             </li>
                             <li>
-                                <Link to='#' target='_self'><i className='fab fa-patreon' /></Link>
+                                <a href='https://www.patreon.com/Hexeption' target='_self'><i className='fab fa-patreon' /></a>
                             </li>
                         </ul>
                         {/* social icons close */}
