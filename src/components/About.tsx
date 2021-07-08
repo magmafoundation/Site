@@ -75,7 +75,7 @@ export function About() {
                                             be free.</p>
                                     </div>
                                     <div className='action-box'>
-                                        <a href='https://github.com/magmafoundation/Magma' className='octf-btn octf-btn-icon octf-btn-white'>Learn More<i
+                                        <a href='https://github.com/magmafoundation/Magma' className='octf-btn octf-btn-icon octf-btn-white'>Github<i
                                             className='flaticon-right-arrow-1' /></a>
                                     </div>
                                 </div>
@@ -91,11 +91,11 @@ export function About() {
                                     </div>
                                     <div className='content-box'>
                                         <h5>Active Development &amp; Support</h5>
-                                        <p>At Magma we strive to having a great support team and an active development
+                                        <p>At Magma we strive to have a great support team and an active development
                                             team</p>
                                     </div>
                                     <div className='action-box'>
-                                        <a href='https://github.com/magmafoundation/Magma' className='octf-btn octf-btn-icon octf-btn-white'>Learn More<i
+                                        <a href='https://discord.gg/magma' className='octf-btn octf-btn-icon octf-btn-white'>Join Discord<i
                                             className='flaticon-right-arrow-1' /></a>
                                     </div>
                                 </div>

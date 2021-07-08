@@ -17,8 +17,7 @@ export function Header() {
                         <div className='col-md-12 text-center'>
                             <h2 className='banner-stitle m-b55 xs-m-b40'>Enchant Your Forge Server<br /><span
                                 className='text-second'>Today</span></h2>
-                            <h6 className='banner-title m-b0'>Magma is most powerful Forge server, providing you
-                                with mods and Plugins using Spigot and Paper for Performance and Stability. </h6>
+                            <h6 className='banner-title m-b0'>Magma is the most powerful Forge server providing you with mods and Plugins using Spigot and Paper for Performance and Stability.</h6>
                             <div className='wpcf7'>
                                 <div className='screen-reader-response' />
                                 <Link smooth={true} to={"downloads"}><button type='submit' className='octf-btn octf-btn-icon octf-btn-primary'>Start
