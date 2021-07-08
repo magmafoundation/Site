@@ -72,6 +72,11 @@
 #menu-footer-menu li{
   cursor: pointer;
 }
+
+a:hover {
+  cursor: pointer;
+}
+
 @import "./include/bootstrap.css";
 @import "./include/font-awesome.css";
 @import "./include/flaticon.css";
