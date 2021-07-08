@@ -33,7 +33,7 @@ export function About() {
                                         <p>Paper patches for Performance Optimization and Stability.</p>
                                     </div>
                                     <div className='action-box'>
-                                        <a href='#' className='octf-btn octf-btn-icon octf-btn-white'>Learn More<i
+                                        <a href='https://github.com/magmafoundation/Magma' className='octf-btn octf-btn-icon octf-btn-white'>Learn More<i
                                             className='flaticon-right-arrow-1' /></a>
                                     </div>
                                 </div>
@@ -54,7 +54,7 @@ export function About() {
                                             easy install</p>
                                     </div>
                                     <div className='action-box'>
-                                        <a href='#' className='octf-btn octf-btn-icon octf-btn-white'>Learn More<i
+                                        <a href='https://github.com/magmafoundation/Magma' className='octf-btn octf-btn-icon octf-btn-white'>Learn More<i
                                             className='flaticon-right-arrow-1' /></a>
                                     </div>
                                 </div>
@@ -75,7 +75,7 @@ export function About() {
                                             be free.</p>
                                     </div>
                                     <div className='action-box'>
-                                        <a href='#' className='octf-btn octf-btn-icon octf-btn-white'>Learn More<i
+                                        <a href='https://github.com/magmafoundation/Magma' className='octf-btn octf-btn-icon octf-btn-white'>Learn More<i
                                             className='flaticon-right-arrow-1' /></a>
                                     </div>
                                 </div>
@@ -95,7 +95,7 @@ export function About() {
                                             team</p>
                                     </div>
                                     <div className='action-box'>
-                                        <a href='#' className='octf-btn octf-btn-icon octf-btn-white'>Learn More<i
+                                        <a href='https://github.com/magmafoundation/Magma' className='octf-btn octf-btn-icon octf-btn-white'>Learn More<i
                                             className='flaticon-right-arrow-1' /></a>
                                     </div>
                                 </div>
