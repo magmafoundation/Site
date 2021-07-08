@@ -90,6 +90,9 @@ export function Navbar() {
                                             <Link smooth={true} duration={500} to='downloads'><i
                                                 className='fas fa-download' /> Downloads</Link>
                                         </li>
+                                        <li>
+                                            <a href="https://api.magmafoundation.org/api-docs/index.html"><i className='fas fa-cogs' /> API</a>
+                                        </li>
 
                                     </ul>
                                 </nav>
