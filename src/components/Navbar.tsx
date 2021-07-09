@@ -121,22 +121,22 @@ export function Navbar() {
                             <div className='mobile_nav' style={{ display: 'block' }}>
                                 <ul id='menu-main-menu' className='mobile_mainmenu'>
                                     <li className='current-menu-item current-menu-ancestor'>
-                                        <Link smooth={true} duration={500} to='page'><i className='fas fa-home' /> Home</Link>
+                                        <Link smooth={true} duration={500} to='page'><i className='fas fa-home fa-fw' /> Home</Link>
                                     </li>
                                     <li>
-                                        <Link smooth={true} duration={500} to='about'><i className='fas fa-info' /> About</Link>
+                                        <Link smooth={true} duration={500} to='about'><i className='fas fa-info fa-fw' /> About</Link>
                                     </li>
                                     <li>
-                                        <Link smooth={true} duration={500} to='https://discord.gg/magma'><i className='fab fa-discord' /> Discord</Link>
+                                        <Link smooth={true} duration={500} to='https://discord.gg/magma'><i className='fab fa-discord fa-fw' /> Discord</Link>
                                     </li>
                                     <li>
-                                        <Link smooth={true} duration={500} to='partners'><i className='fas fa-handshake' /> Partners</Link>
+                                        <Link smooth={true} duration={500} to='partners'><i className='fas fa-handshake fa-fw' /> Partners</Link>
                                     </li>
                                     <li>
-                                        <Link smooth={true} duration={500} to='downloads'><i className='fas fa-download' /> Downloads</Link>
+                                        <Link smooth={true} duration={500} to='downloads'><i className='fas fa-download fa-fw' /> Downloads</Link>
                                     </li>
                                     <li>
-                                        <a href="https://api.magmafoundation.org/api-docs/index.html"><i className='fas fa-cogs' /> API</a>
+                                        <a href="https://api.magmafoundation.org/api-docs/index.html"><i className='fas fa-cogs fa-fw' /> API</a>
                                     </li>
                                 </ul>
                             </div>
