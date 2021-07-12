@@ -91,6 +91,9 @@ export function Navbar() {
                                                 className='fas fa-download' /> Downloads</Link>
                                         </li>
                                         <li>
+                                            <a href="https://github.com/magmafoundation"><i className='fab fa-github' /> GitHub</a>
+                                        </li>
+                                        <li>
                                             <a href="https://api.magmafoundation.org/api-docs/index.html"><i className='fas fa-cogs' /> API</a>
                                         </li>
 
@@ -127,13 +130,16 @@ export function Navbar() {
                                         <Link smooth={true} duration={500} to='about'><i className='fas fa-info fa-fw' /> About</Link>
                                     </li>
                                     <li>
-                                        <Link smooth={true} duration={500} to='https://discord.gg/magma'><i className='fab fa-discord fa-fw' /> Discord</Link>
+                                        <a href="https://discord.gg/magma"><i className='fab fa-discord fa-fw' /> Discord</a>
                                     </li>
                                     <li>
                                         <Link smooth={true} duration={500} to='partners'><i className='fas fa-handshake fa-fw' /> Partners</Link>
                                     </li>
                                     <li>
                                         <Link smooth={true} duration={500} to='downloads'><i className='fas fa-download fa-fw' /> Downloads</Link>
+                                    </li>
+                                    <li>
+                                        <a href="https://github.com/magmafoundation"><i className='fab fa-github fa-fw' /> GitHub</a>
                                     </li>
                                     <li>
                                         <a href="https://api.magmafoundation.org/api-docs/index.html"><i className='fas fa-cogs fa-fw' /> API</a>
